@@ -1,4 +1,4 @@
-## 🏕️ CamperNature
+# 🏕️ CamperNature
 
 Sistema web completo para la gestión de un camping con campers. Incluye reservas, gestión de parcelas, servicios adicionales, recuperación de contraseña por email y más.
 
@@ -18,8 +18,12 @@ Antes de empezar, asegúrate de tener estas herramientas instaladas:
 
 Clona este repositorio y entra a la carpeta del proyecto:
 
+```bash
 git clone https://github.com/ArturoVazquez/MVPCamperNature.git
 cd MVPCamperNature
+```
+
+---
 
 ## 📦 Estructura del proyecto
 
@@ -36,6 +40,8 @@ npm install
 cd client
 npm install
 ```
+
+---
 
 ## 🗃️ Configuración de base de datos
 
@@ -56,6 +62,8 @@ DB_PASSWORD=root    # Contraseña de tu MySQL (ajústala según tu configuració
 DB_DATABASE=camper_nature
 ```
 
+---
+
 ## 📧 Configuración del servicio de envío de emails (Nodemailer)
 
 El proyecto envía correos electrónicos para diversas funciones, como:
@@ -64,8 +72,6 @@ El proyecto envía correos electrónicos para diversas funciones, como:
 - Recuperación de contraseña
 - Formulario de contacto
 - Otros mensajes automáticos
-
-Para que esto funcione, es necesario configurar un servicio **SMTP**.
 
 ### 🔐 Usando Gmail (recomendado para desarrollo)
 
@@ -80,6 +86,8 @@ EMAIL_USER=tuemail@gmail.com       # Reemplázalo con tu correo real
 EMAIL_PASS=tucontraseñaapp         # Reemplázalo con la contraseña de aplicación generada
 ```
 
+---
+
 ## 🖥️ Ejecutar el proyecto en local
 
 Una vez instaladas las dependencias y configurado el entorno, puedes iniciar el proyecto en modo desarrollo.
@@ -92,7 +100,6 @@ URL: [http://localhost:4000](http://localhost:4000)
 cd server
 npm run dev  # Usa nodemon para recarga automática
 ```
-El backend usa Express y escucha por defecto en el puerto 4000.
 
 ### 🎨 Frontend (React + Vite)
 
@@ -102,8 +109,8 @@ URL: [http://localhost:5173](http://localhost:5173)
 cd client
 npm run dev
 ```
-El frontend está construido con React y Vite, lo que permite recarga rápida y actualizaciones en vivo durante el desarrollo.
 
+---
 
 ## ✅ Verificar que todo funcione
 
@@ -142,16 +149,12 @@ El frontend está construido con React y Vite, lo que permite recarga rápida y 
 - Comprueba la **carpeta de spam** en tu email.
 - Asegúrate de que estás usando una **contraseña de aplicación válida**, especialmente si usas Gmail.
 
+---
+
 ## 📌 Funcionalidades destacadas
 
-✅ Gestión de reservas con validación de disponibilidad por fechas.
-
-🔐 Recuperación de contraseña por correo.
-
-🚐 Gestión de parcelas, vehículos, servicios y usuarios.
-
-⚡ Interfaz moderna con React y Vite.
-
-🛠️ Panel de administración para control completo del sistema.
-
-
+- ✅ Gestión de reservas con validación de disponibilidad por fechas.  
+- 🔐 Recuperación de contraseña por correo.  
+- 🚐 Gestión de parcelas, vehículos, servicios y usuarios.  
+- ⚡ Interfaz moderna con React y Vite.  
+- 🛠️ Panel de administración para control completo del sistema.  
